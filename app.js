@@ -1,4 +1,4 @@
-// Run: nodemon app.js
+// Run: nodemon app.js / node app.js
 
 // 引入套件
 const express = require('express')
