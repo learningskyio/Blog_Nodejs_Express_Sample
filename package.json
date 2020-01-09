@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "NODE_ENV=test mocha test/*.js --exit --recursive --timeout 5000"
   },
   "keywords": [],
