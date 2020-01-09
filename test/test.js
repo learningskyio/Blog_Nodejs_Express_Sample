@@ -27,6 +27,21 @@ describe('# CRUD', () => {
 
     })
 
+    describe('GET http://Server-IP:3000/', () => {
+
+      it('Return name: archer, job: engineer', (done) => {
+        request(app)
+          .get('/')
+          .expect(200)
+          .end((err, res) => {
+            if (err) return done(err)
+            res.text.should.include('Hello World')
+            return done()
+          })
+      })
+
+    })
+
     describe('GET http://Server-IP:3000/?name=archer&job=engineer', () => {
 
       it('Return name: archer, job: engineer', (done) => {

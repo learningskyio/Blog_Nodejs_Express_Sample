@@ -12,10 +12,15 @@ router.post('/', (req, res) => {
 })
 
 /********************************************************************
+* GET http://localhost:3000/
 * GET http://localhost:3000/?name=archer&job=engineer
 ********************************************************************/
 router.get('/', (req, res) => {
-  res.send(`name: ${req.query.name}, job: ${req.query.job}`)
+  if (req.query.name && req.query.job) {
+    res.send(`name: ${req.query.name}, job: ${req.query.job}`)
+  } else {
+    res.send(`Hello World`)
+  }
 })
 
 /********************************************************************
