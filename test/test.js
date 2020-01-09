@@ -7,7 +7,7 @@ describe('# CRUD', () => {
 
   context('# Request', () => {
 
-    describe('POST http://localhost:3000/', () => {
+    describe('POST http://Server-IP:3000/', () => {
 
       it('Return { name: Archer } ', (done) => {
         request(app)
@@ -27,7 +27,7 @@ describe('# CRUD', () => {
 
     })
 
-    describe('GET http://localhost:3000/?name=archer&job=engineer', () => {
+    describe('GET http://Server-IP:3000/?name=archer&job=engineer', () => {
 
       it('Return name: archer, job: engineer', (done) => {
         request(app)
@@ -42,7 +42,7 @@ describe('# CRUD', () => {
 
     })
 
-    describe('PUT http://localhost:3000/:id', () => {
+    describe('PUT http://Server-IP:3000/:id', () => {
 
       it('Return { id: 1024 } ', (done) => {
         request(app)
@@ -59,7 +59,7 @@ describe('# CRUD', () => {
 
     })
 
-    describe('DELETE http://localhost:3000/:id', () => {
+    describe('DELETE http://Server-IP:3000/:id', () => {
 
       it('Return { id: 1024 } ', (done) => {
         request(app)
