@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "istanbul": "^0.4.5",
     "mocha": "^7.0.0",
     "supertest": "^4.0.2"
   }
