@@ -35,7 +35,7 @@ describe('# CRUD', () => {
           .expect(200)
           .end((err, res) => {
             if (err) return done(err)
-            res.text.should.include('Hello World')
+            res.text.should.equal('Hello World')
             return done()
           })
       })
