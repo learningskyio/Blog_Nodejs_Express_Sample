@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
   if (req.query.name && req.query.job) {
     res.send(`name: ${req.query.name}, job: ${req.query.job}`)
   } else {
-    res.send(`Hello World-1`)
+    res.send(`Hello World`)
   }
 })
 
